@@ -1,0 +1,40 @@
+[user]
+	name = Melanie Cebula
+	email = melaniecebula@fb.com
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[alias]
+  br = branch -v -v
+  st = status
+  sh = show
+  co = checkout
+  ci = commit
+  ls = log --oneline
+  cpk = cherry-pick
+  di = diff
+  p  = pull
+  pr = pull --rebase
+  rb = rebase
+  rba = rebase --abort
+  rbc = rebase --continue
+  rbi = rebase -i
+  rbs = rebase --skip
+  rh  = reset --hard
+  rhh = reset --hard head
+  rhp = reset --hard head^
+  pum = push origin HEAD:master
+  puh = push origin HEAD
+  tm  = !sh -c 'git branch --set-upstream-to=origin/master'
+  ts  = !sh -c 'git branch --set-upstream-to=origin/stable'
+[core]
+  trustctime = false
+      editor = vim
+	excludesfile = /Users/melaniecebula/.gitignore
+[branch]
+  autosetuprebase = always
+[branch "master"]
+  remote = origin
+  merge = refs/heads/master
+  rebase = true
